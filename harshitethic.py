@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "ENTER YOUR API KEY HERE"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "ENTER YOUR TELEGRAM TOKEN HERE"
+    tgkey = "6285603129:AAGyGGKWOBaocKsXXOkAN6wif3lrWuGjVoY"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -33,8 +33,9 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Harshit ethic'
-username = 'harshitethic_bot'
+botname = 'Mr.Gpt'
+
+username = 'Mr.GPT'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -64,8 +65,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Mr.GPT'
+        username = 'Mr.GPT'
         update.message.reply_text('Hi')
         return 
     else:
@@ -91,16 +92,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Mr.GPT'
+        username = 'Mr.GPT'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Mr.GPT'
+        username = 'Mr.GPT_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
@@ -126,8 +127,8 @@ def retry(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Mr.GPT'
+        username = 'Mr.GPT_bot'
         update.message.reply_text('Send a message!')
         return 
     else:
